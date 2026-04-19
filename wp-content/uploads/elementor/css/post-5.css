@@ -1,0 +1,143 @@
+.elementor-kit-5 {
+  --e-global-color-primary: #668af8;
+  --e-global-color-secondary: #54595f;
+  --e-global-color-text: #7a7a7a;
+  --e-global-color-accent: #61ce70;
+  --e-global-color-b82e371: #331b3b;
+  --e-global-color-647bd45: #3366ff;
+  --e-global-color-24a1947: #000000;
+  --e-global-color-54f1104: #ffffff;
+  --e-global-color-4b1b1e2: #f92d42;
+  --e-global-color-863bc4a: #fda61d;
+  --e-global-color-6054f92: #331b3b;
+  --e-global-color-c9a3ed0: #668af8;
+  --e-global-color-86ac5fb: #a200fa;
+  --e-global-color-7b63230: #006ffe;
+  --e-global-color-416a9ba: #ececec;
+  --e-global-typography-primary-font-family: "Roboto";
+  --e-global-typography-primary-font-weight: 600;
+  --e-global-typography-secondary-font-family: "Roboto Slab";
+  --e-global-typography-secondary-font-weight: 400;
+  --e-global-typography-text-font-family: "Roboto";
+  --e-global-typography-text-font-weight: 400;
+  --e-global-typography-accent-font-family: "Roboto";
+  --e-global-typography-accent-font-weight: 500;
+  --e-global-typography-1a67587-font-family: "Prosto One";
+  --e-global-typography-b87d06e-font-family: "Super Dessert";
+  background-color: var(--e-global-color-54f1104);
+  --e-preloader-animation: eicon-spin;
+  --e-preloader-animation-duration: 8000ms;
+  --e-preloader-delay: 800ms;
+}
+.elementor-kit-5 e-page-transition {
+  background-color: var(--e-global-color-647bd45);
+}
+.elementor-section.elementor-section-boxed > .elementor-container {
+  max-width: 1140px;
+}
+.e-con {
+  --container-max-width: 1140px;
+}
+.elementor-widget:not(:last-child) {
+  margin-block-end: 20px;
+}
+.elementor-element {
+  --widgets-spacing: 20px 20px;
+  --widgets-spacing-row: 20px;
+  --widgets-spacing-column: 20px;
+}
+ {
+}
+h1.entry-title {
+  display: var(--page-title-display);
+}
+@media (max-width: 1024px) {
+  .elementor-section.elementor-section-boxed > .elementor-container {
+    max-width: 1024px;
+  }
+  .e-con {
+    --container-max-width: 1024px;
+  }
+}
+@media (max-width: 767px) {
+  .elementor-section.elementor-section-boxed > .elementor-container {
+    max-width: 767px;
+  }
+  .e-con {
+    --container-max-width: 767px;
+  }
+  .elementor-kit-5 {
+    --e-page-transition-entrance-animation: e-page-transition-slide-out-down;
+    --e-preloader-width: 50%;
+    --e-preloader-max-width: 50%;
+  }
+} /* Start custom CSS */
+body {
+  overflow-x: hidden;
+}
+
+.animated-background {
+  background: radial-gradient(
+      100% 100% at var(--4-x-position) var(--4-y-position),
+      #3366ff 0%,
+      transparent
+    ),
+    radial-gradient(
+      100% 100% at var(--5-x-position) var(--5-y-position),
+      #a200fa 0%,
+      transparent
+    ),
+    #331b3b;
+  animation-name: main;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  transition-timing-function: ease-in;
+}
+@property --4-x-position {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 20%;
+}
+@property --4-y-position {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 80%;
+}
+@property --5-x-position {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 80%;
+}
+@property --5-y-position {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 20%;
+}
+:root {
+  --4-x-position: 20%;
+  --4-y-position: 80%;
+  --5-x-position: 80%;
+  --5-y-position: 20%;
+}
+@keyframes main {
+  25% {
+    --4-x-position: 15%;
+    --4-y-position: 15%;
+    --5-x-position: 85%;
+    --5-y-position: 80%;
+  }
+  50% {
+    --4-x-position: 80%;
+    --4-y-position: 15%;
+    --5-x-position: 15%;
+    --5-y-position: 85%;
+  }
+} /* End custom CSS */
+/* Start Custom Fonts CSS */
+@font-face {
+  font-family: "Super Dessert";
+  font-display: auto;
+  src: url("/wp-content/uploads/2025/05/SuperDessert-EaAyj.ttf")
+    format("truetype");
+}
+/* End Custom Fonts CSS */
